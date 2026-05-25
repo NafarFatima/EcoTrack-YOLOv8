@@ -1,0 +1,53 @@
+name: ecotrack
+description: EcoTrack - Recycle for a Greener Tomorrow
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+  flutter: '>=3.10.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.6
+  provider: ^6.1.1
+  flutter_svg: ^2.0.10+1
+  dotted_border: ^2.0.0+3
+  flutter_screenutil: ^5.9.0
+  firebase_core: ^4.7.0
+  firebase_auth: ^6.4.0
+  cloud_firestore: ^6.3.0
+  intl: ^0.19.0
+  image_picker: ^1.0.7
+  shared_preferences: ^2.2.2
+  onnxruntime: ^1.4.1
+  image: ^4.2.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+  flutter_launcher_icons: ^0.13.1
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+    - assets/icons/
+    - assets/models/
+
+  fonts:
+    - family: PlusJakartaSans
+      fonts:
+        - asset: assets/fonts/PlusJakartaSans-VariableFont_wght.ttf
+        - asset: assets/fonts/PlusJakartaSans-Italic-VariableFont_wght.ttf
+          style: italic
+
+flutter_launcher_icons:
+  android: "ic_launcher"
+  ios: true
+  image_path: "assets/icons/app_icon.png"
+  adaptive_icon_background: "#FBFBE2"
+  adaptive_icon_foreground: "assets/icons/app_icon.png"
